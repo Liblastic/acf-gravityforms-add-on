@@ -17,6 +17,9 @@ class Notices
     {
         if (class_exists('GFFormsModel')) {
             $this->forms = GFFormsModel::get_forms();
+
+            // Filter forms.
+            $this->forms = apply_filters( 'acf_gravity_forms_add_on/notices/forms', $this->forms );
         }
     }
 

@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [get-forms-filters] - 2019-08-02
+### Added
+- Added filters for queried forms.
+
 ## [1.2.1] - 2017-10-4
 ### Changed
 * Changed the terminology of the return format

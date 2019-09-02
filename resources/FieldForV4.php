@@ -50,7 +50,10 @@ class FieldForV4 extends acf_field
         $this->notices = new Notices();
 
 	    if (class_exists('GFFormsModel')) {
-		    $this->forms = GFFormsModel::get_forms();
+            $this->forms = GFFormsModel::get_forms();
+
+            // Filter forms.
+            $this->forms = apply_filters( 'acf_gravity_forms_add_on/field_for_v4/forms', $this->forms );
 	    }
 
         // Execute the parent constructor as well
